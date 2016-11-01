@@ -15,6 +15,8 @@ namespace adolf
 
         public hitler()
         {
+            RegisterCommands();
+
             discord = new DiscordClient(x =>
             {
                 x.LogLevel = LogSeverity.Debug;
@@ -48,10 +50,10 @@ namespace adolf
             commands.CreateCommand("wyglosmowe") 
                 .Description("Adolf przemawia") 
                 .Alias("wm")                                                                                                    
-                .Parameter("", ParameterType.Unparsed) 
+                
                 .Do(async (e) =>                           
                 {
-                    string text = e.Args[5]; 
+                    string text = "Moje uczucia jako chrześcijanina wskazują mi mojego Pana i Zbawcę jako wojownika. Wskazują mi człowieka, który kiedyś w swej samotności, otoczony przez garstkę uczniów, rozpoznawał w Żydach, czym naprawdę są, i zebrał ludzi, by walczyć przeciwko nim, i który był największym nie jako męczennik, ale jako wojownik. W nieograniczonej miłości jako chrześcijanin i jako człowiek czytam ustępy, które mówią, jak Pan wystąpił w swej mocy i pochwycił bicz, by wypędzić ze świątyni ten ród węży i żmij. Jak wspaniała była jego walka w obronie świata przeciwko truciźnie żydowskiej. Dziś, po dwu tysiącach lat, z głębokim uczuciem rozpoznaję wyraźniej niż kiedykolwiek, że w tym właśnie celu rozlał On swoją krew na krzyżu. Jako chrześcijanin nie mam obowiązku, by przyzwalać na oszukiwanie mnie, lecz obowiązkiem moim jest być wojownikiem o prawdę i sprawiedliwość… I jeśli jest cokolwiek, co potwierdzałoby, że działamy właściwie, jest to ucisk, który codziennie wzrasta. Jako chrześcijanin mam też obowiązek wobec mojego własnego narodu. Kiedy wychodzę rano i widzę tych ludzi stojących w kolejkach i patrzę na ich ściśnięte twarze, wierzę, że byłbym nie chrześcijaninem, ale samym diabłem, gdybym nie odczuwał żalu, gdybym nie zwrócił się, jak nasz Pan dwa tysiące lat temu, przeciwko tym którzy do dziś wykorzystują i grabią tych biedaków.";
                     await e.Channel.SendMessage(text); 
                 });
 
