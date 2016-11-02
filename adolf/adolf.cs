@@ -287,13 +287,7 @@ namespace adolf
                         case 76:
                             text = "Żyd, stosując przemoc, pozbywa się na tym polu wszystkich konkurentów. Przy pomocy wrodzonej brutalnej chciwości stawia związki zawodowe na poziomie brutalnej siły. Każdego, kto ma wystarczającą inteligencję do oparcia się żydowskim powabom, łamie się przez zastraszenie, jakkolwiek nie byłby zdecydowany i inteligentny. Te metody są niezwykle skuteczne. Za pośrednictwem związków zawodowych, które powinny ochraniać naród, Żyd niszczy teraz podstawy narodowej gospodarki.";
                             break;
-
-
-
-
-
-
-
+                            
                     }
 
                  
